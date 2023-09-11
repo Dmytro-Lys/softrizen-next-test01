@@ -1,14 +1,25 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+import About from '@/components/About'
+import { useRef } from 'react'
+
+const navigation = {
+}
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-    <Header/>
-    <main
+      <Header />
+      <main>
+        <Hero />
+        <About/>
+      </main>
+    {/* <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -116,7 +127,7 @@ export default function Home() {
           </p>
         </a>
       </div>
-      </main>
+      </main> */}
       </>
   )
 }
