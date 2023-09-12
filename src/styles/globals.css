@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* @import "~node_modules/modern-normalize/modern-normalize.css"; */
+/* @font-face {
+  font-family: "Inter", sans-serif;
+  src: url(/public/fonts/Inter-VariableFont_slnt\wght.ttf);
+} */
+*/ :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
