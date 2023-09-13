@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header/Header'
-import Hero from '@/components/Hero'
+import Hero from '@/components/Hero/Hero'
 import About from '@/components/About'
 
 

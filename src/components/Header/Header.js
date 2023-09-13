@@ -30,7 +30,7 @@ return(
         <div className='flex items-center justify-between'>
             <a className="block" href="#">
                 <Image
-                    src="./images/logo.svg"
+                    src="../images/logo.svg"
                     alt="Logo"
                     width={61}
                     height={33}

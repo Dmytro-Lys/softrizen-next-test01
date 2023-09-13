@@ -1,12 +1,11 @@
 import BorderCorner from "./BorderCorner";
-import css from "./Hero.module.css"
-import Container from "./Container";
+import Container from "../Container";
 
 const Hero = () => (
     <Container classBg={"hero-container"}>
-        <section className={`${css.hero} pb-[56px] pt-[105px] flex justify-center
+        <section className="pb-[56px] pt-[105px] flex justify-center
                              md:pt-[133px] md:block
-                            xl:pt-[130px]`}>
+                            xl:pt-[130px]">
             <div className="max-w-[280px] grid grid-cols-1 grid-rows-1 gap-[24px] justify-items-center
                             md:max-w-full md:justify-items-start md:grid-cols-2 md:grid-rows-3 md:gap-0">
                 <div className="order-1 row-span-2 md:row-span-3">
