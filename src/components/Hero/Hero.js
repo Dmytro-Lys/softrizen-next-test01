@@ -22,12 +22,12 @@ const Hero = () => (
                         Hoverla / Yaremche / Zakarpattia / Vorokhta / Synevyr Lake / Bukovel
                     </p>
                 </div>  
-                <h2 className="order-first justify-self-end uppercase font-thin 
-                               leading-none w-[118px] tracking-[1.7px] text-[37px] 
-                               md:order-2 md:w-[230px] md:text-[67px] md:tracking-[8.7px] 
-                               xl:w-[305px] xl:text-[98px] xl:tracking-wider ">
+                <h2 className="block order-first justify-self-end uppercase font-thin 
+                               leading-none w-[118px] tracking-[1px] text-[37px] 
+                               md:order-2 md:w-[230px] md:text-[67px] md:tracking-[6px] 
+                               xl:w-[294px] xl:text-[98px] xl:tracking-[1px] ">
                     <span className="font-medium">7</span>days<span className="block tracking-[9.5px] text-[12px] 
-                                     md:tracking-[26px] md:text-[14px]
+                                     md:tracking-[25.9px] md:text-[14px]
                                      xl:tracking-[36.5px] xl:text-[16px]">journey</span>
                 </h2>      
                 <div className="order-3  max-w-[280px] 
