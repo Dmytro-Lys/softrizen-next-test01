@@ -30,10 +30,10 @@ return(
         <div className='flex items-center justify-between'>
             <a className="block" href="#">
                 <Image
-                    src="../images/logo.svg"
+                    src="../images/Logo.svg"
                     alt="Logo"
                     width={61}
-                    height={33}
+                    height={36}
                 />
             </a>
             <nav className='hidden md:block'>
