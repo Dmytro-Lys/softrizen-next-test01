@@ -1,5 +1,6 @@
 import Header from '@/components/Header/Header'
 import Hero from '@/components/Hero/Hero'
+import Gallery from '@/components/Gallery/Gallery'
 
 
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Gallery />
       </main>
     </>
   )

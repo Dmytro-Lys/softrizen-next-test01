@@ -1,6 +1,6 @@
 import data from "../../../public/data/hero.json"
-import BorderCorner from "./BorderCorner";
 import Container from "../Container";
+import BorderCorner from "./BorderCorner";
 import css from "./Hero.module.css"
 
 const Hero = () => {
@@ -13,11 +13,10 @@ const Hero = () => {
             <div className="w-full grid grid-cols-1 grid-rows-1 gap-[24px] justify-items-center
                             md:justify-items-start md:grid-cols-2 md:grid-rows-3 md:gap-0">
                 <div className="w-full order-1 row-span-2 md:row-span-3">
-                    <h1 className=" mb-[24px]
+                    <h1 className=" mb-[24px] font-thin uppercase
                            text-[40px] leading-[56px] tracking-[-2px]
                            md:mb-[68px] md:leading-[1.33] md:text-[67px] md:tracking-[-3px]
-                           xl:mb-[148px] xl:text-[98px] xl:tracking-[-3.9px] 
-                           font-thin uppercase">
+                           xl:mb-[148px] xl:text-[98px] xl:tracking-[-3.9px] ">
                         <span className="block leading-none font-medium">Uncover</span> Carpathian’s Secrets
                     </h1>
                     <p className=" w-[157px] px-{123px] text-[10px] leading-[16px] font-extralight
@@ -42,7 +41,7 @@ const Hero = () => {
                                   xl:text-[18px]  xl:leading-[24px] ">
                         {weOffer}
                     </p>
-                    <a href="#" className="relative bg-white/[.1] hover:bg-white/[.2] flex justify-center text-[18px] xl:text-[32px] leading-[50px] xl:leading-[72px] font-bold uppercase">
+                    <a href="#" className="relative bg-white/[.1]  transition duration-300 ease-in-out hover:bg-white/[.2] flex justify-center text-[18px] xl:text-[32px] leading-[50px] xl:leading-[72px] font-bold uppercase">
                        join now
                        <BorderCorner />
                     </a>

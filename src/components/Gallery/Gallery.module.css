@@ -1,0 +1,67 @@
+.gallery-bg {
+  background-color: rgba(2, 15, 8, 0.5);
+
+  background-image: url(../../../public/images/gallery/gallery_bg_mob@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .gallery-bg {
+    background-image: url(../../../public/images/gallery/gallery_bg_mob@2x.jpg);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .gallery-bg {
+      background-image: url(../../../public/images/gallery/gallery_bg_mob@3x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-bg {
+    background-image: url(../../../public/images/gallery/gallery_bg_tab@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .gallery-bg {
+      background-image: url(../../../public/images/gallery/gallery_bg_tab@2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .gallery-bg {
+      background-image: url(../../../public/images/gallery/gallery_bg_tab@3x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery-bg {
+    background-image: url(../../../public/images/gallery/gallery_bg_desk@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .gallery-bg {
+      background-image: url(../../../public/images/gallery/gallery_bg_desk@2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .gallery-bg {
+      background-image: url(../../../public/images/gallery/gallery_bg_desk@3x.jpg);
+    }
+  }
+}
