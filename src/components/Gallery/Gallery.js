@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { nanoid } from 'nanoid';
-import { useRef } from 'react';
 import SwipeButton from './SwipeButton';
 import Container from "../Container"; 8
 import Picture from "./Picture";
@@ -13,7 +12,6 @@ import css from "./Gallery.module.css"
 const Gallery = () => {
     const photoSwiper = ["second", "third", "first", "second", "third", "first"]   
     const photo = ["first", "second", "third"]   
-    // console.log({ Screen })
  return (<section id="gallery" className={`${css["gallery-bg"]} py-[56px] w-full
                         md:pt-[64px] md:pb-[58px]
                         xl:py-[104px]`}>
@@ -30,7 +28,6 @@ const Gallery = () => {
                  effect={'coverflow'}
                  loop={true}
                  centeredSlides={true}
-                 //  spaceBetween={2}
                  slidesPerView={2}
                  coverflowEffect={{
                      rotate: 0,
@@ -51,12 +48,9 @@ const Gallery = () => {
                      return (
                          <SwiperSlide key={nanoid()} className='w-[280px]'>
                              <Picture key={nanoid()} fileNumber={item} />
-                               
                          </SwiperSlide>
-                     
                      )
                  })}
-             
                  <SwipeButton text={"back"} position={"left-[75px] xl:left-[170px]"} classSwipe={"swiper-back"} />
                  <SwipeButton text={"next"} position={"right-[85px] xl:right-[170px]"} classSwipe={"swiper-next"} />
              </Swiper>

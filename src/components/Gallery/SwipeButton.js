@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 
 const SwipeButton = ({ text, position, classSwipe }) => {
     return (
@@ -6,3 +7,9 @@ const SwipeButton = ({ text, position, classSwipe }) => {
 }
 
 export default SwipeButton;
+
+SwipeButton.propTypes = {
+    text: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    classSwipe: PropTypes.string.isRequired
+}
