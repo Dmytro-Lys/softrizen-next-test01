@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import NavList from "./NavList"
+import NavList from "../NavList"
 import css from "./MobileMenu.module.css"
 
 

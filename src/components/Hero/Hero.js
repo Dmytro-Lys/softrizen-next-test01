@@ -41,7 +41,7 @@ const Hero = () => {
                                   xl:text-[18px]  xl:leading-[24px] ">
                         {weOffer}
                     </p>
-                    <a href="#" className="relative bg-white/[.1]  transition duration-300 ease-in-out hover:bg-white/[.2] flex justify-center text-[18px] xl:text-[32px] leading-[50px] xl:leading-[72px] font-bold uppercase">
+                    <a href="#contacts" className="relative bg-white/[.1]  transition duration-300 ease-in-out hover:bg-white/[.2] flex justify-center text-[18px] xl:text-[32px] leading-[50px] xl:leading-[72px] font-bold uppercase">
                        join now
                        <BorderCorner />
                     </a>

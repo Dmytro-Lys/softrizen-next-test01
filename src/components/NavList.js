@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import NavItem from "./NavItem"
-const navItems = ["about", "services", "career", "gallery", "contacts"]
+// const navItems = ["about", "services", "career", "gallery", "contacts"]
+const navItems = ["gallery", "contacts"]
 const textHeader = "text-[14px] tracking-[1.4px]"
 const textMenu = "text-[18px] tracking-[1.8px]"
 

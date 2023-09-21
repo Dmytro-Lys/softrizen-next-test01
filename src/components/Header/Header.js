@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image'
-import NavList from './NavList'
-import MobileMenu from './MobileMenu';
+import NavList from '../NavList'
+import MobileMenu from '../MobileMenu/MobileMenu';
 import Container from '../Container';
 
 
