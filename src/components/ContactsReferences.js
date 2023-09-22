@@ -1,9 +1,9 @@
 import {nanoid} from 'nanoid';
 import ContactItem from "./ContactItem"
 
-const ContactsReferences = ({items}) =>{
+const ContactsReferences = ({items, order}) =>{
     return(
-      <ul className={`flex flex-col`}>
+      <ul className={`flex flex-col ${!order ? "justify-self-end": ""} xl:justify-self-end`}>
          {items.map(({ref, text}) => { return <ContactItem key={nanoid()} refItem={ref} textItem={text}/> })}
       </ul>
     )
