@@ -10,5 +10,6 @@ const ContactsGroupCaption = ({text, order=""}) =>{
 export default ContactsGroupCaption;
 
 ContactsGroupCaption.propTypes = {
-    text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired,
+    order: PropTypes.string
 }

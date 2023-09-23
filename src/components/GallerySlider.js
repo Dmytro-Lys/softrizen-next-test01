@@ -38,8 +38,8 @@ const GallerySlider = () => {
                          </SwiperSlide>
                      )
                  })}
-                 <SwipeButton text={"back"} position={"left-[75px] xl:left-[170px]"} classSwipe={"swiper-back"} />
-                 <SwipeButton text={"next"} position={"right-[85px] xl:right-[170px]"} classSwipe={"swiper-next"} />
+                 <SwipeButton text={"back"} position={"left-[85px] xl:left-[205px]"} classSwipe={"swiper-back"} />
+                 <SwipeButton text={"next"} position={"right-[85px] xl:right-[205px]"} classSwipe={"swiper-next"} />
              </Swiper>
              </div>
     )

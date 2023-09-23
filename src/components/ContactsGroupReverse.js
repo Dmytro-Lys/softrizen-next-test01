@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import ContactsReferences from "./ContactsReferences"
 import ContactsGroupCaption from "./ContactsGroupCaption"
 
@@ -13,3 +14,9 @@ const ContactsGroupRevers = ({dataContacts, caption, order=""}) => {
 }
 
 export default ContactsGroupRevers;
+
+ContactsGroupRevers.propTypes = {
+   dataContacts: PropTypes.array.isRequired,
+   caption: PropTypes.string.isRequired,
+   order: PropTypes.string
+}

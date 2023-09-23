@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import PropTypes from "prop-types"
 
 const ErrorMessage = ({ message }) => {
     return (
@@ -16,3 +17,7 @@ const ErrorMessage = ({ message }) => {
 }
 
 export default ErrorMessage;
+
+ErrorMessage.propTypes = {
+    message: PropTypes.string.isRequired
+}

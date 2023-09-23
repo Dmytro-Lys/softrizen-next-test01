@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types"
 import ErrorMessage from "../ErrorMessage";
 
 const Input = ({ label, name, register, required, pattern, placeholder, errors, checkSubmit }) => {
@@ -19,7 +20,7 @@ const Input = ({ label, name, register, required, pattern, placeholder, errors, 
                           bg-white/5 px-[8px] outline-none xl:h-[28px]
                         placeholder:text-[13px] placeholder:opacity-[0.2]
                         invalid:text-[#FF5757] invalid:font-extralight"
-          {...register(name, { required , pattern: {pattern} })} pattern={pattern}
+          {...register(name, { required })} pattern={pattern}
           placeholder={placeholder}
           onChange={handleChange}
         />
@@ -32,3 +33,14 @@ const Input = ({ label, name, register, required, pattern, placeholder, errors, 
 
 
 export default Input;
+
+Input.propTypes = {
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  register: PropTypes.func.isRequired,
+  required: PropTypes.bool.isRequired,
+  pattern: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  errors: PropTypes.object.isRequired,
+  checkSubmit: PropTypes.func.isRequired
+}

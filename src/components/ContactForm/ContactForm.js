@@ -43,7 +43,7 @@ const ContactForm = () => {
                 </div>            
                 <div className="w-full flex flex-col xl:gap-[4px]">
                     <label className="text-[12px] font-extralight leading-[24px] tracking-[2.4px]">Message</label>
-                    <textarea className="h-[293px] bg-white/5 resize-none outline-none px-[8px]
+                    <textarea className="h-[193px] bg-white/5 resize-none outline-none px-[8px]
                                         md:h-[221px] 
                                         xl:h-[174px] "
                                         {...register("Message")}

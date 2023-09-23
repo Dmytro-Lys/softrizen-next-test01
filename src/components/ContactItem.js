@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 
 const ContactItem = ({refItem, textItem}) =>{
     return(
@@ -11,3 +12,8 @@ const ContactItem = ({refItem, textItem}) =>{
 }
 
 export default ContactItem;
+
+ContactItem.propTypes = {
+   refItem: PropTypes.string.isRequired,
+   textItem: PropTypes.string.isRequired
+}
