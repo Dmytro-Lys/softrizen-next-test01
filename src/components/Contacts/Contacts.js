@@ -13,7 +13,7 @@ const Contacts = () => {
           <SectionTitle firstText='Contact' secondText='Us' />  
           <div className="flex flex-wrap justify-center 
                           md:grid md:grid-cols-1 md:grid-row-2  md:gap-[64px] 
-                          xl:grid-cols-2">
+                          xl:grid-cols-2 xl:gap-0">
             <ContactsList />
             <ContactForm />
           </div>  

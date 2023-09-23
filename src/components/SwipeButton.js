@@ -2,7 +2,8 @@ import PropTypes from "prop-types"
 
 const SwipeButton = ({ text, position, classSwipe }) => {
     return (
-        <button type="button" className={`${classSwipe} z-10 absolute bottom-0 ${position} uppercase text-[33px] font-thin`}>{text}</button>
+        <button type="button" className={`${classSwipe} z-10 absolute bottom-0 ${position} uppercase text-[33px] font-thin
+                      transition-transform duration-300 ease-in-out hover:scale-[1.1]`}>{text}</button>
     )
 }
 

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const ErrorMessage = ({ message }) => {
     return (
-        <div className="absolute bottom-[-24px] right-0 flex">
+        <div className="absolute bottom-[-26px] right-0 flex">
             <Image
                     src="../images/close.svg"
                     alt="close icon"
