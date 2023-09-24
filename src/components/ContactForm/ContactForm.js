@@ -18,7 +18,6 @@ const ContactForm = () => {
         }
     }
     
-   console.log(errors)  
         
     return (
        

@@ -1,19 +1,25 @@
 import { useState, useRef, useEffect } from 'react';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import Image from 'next/image'
 import NavList from '../NavList'
 import MobileMenu from '../MobileMenu/MobileMenu';
 import Container from '../Container';
 
 
-const Header = () => {
+const Header = ({refMain}) => {
     const [isShowMobMenu, setIsShowMobMenu] = useState(false);
     
     const refMobMenu = useRef();
-
-    const handleClick = () => setIsShowMobMenu(true)
-  
-    const closeMobMenu = () => setIsShowMobMenu(false)
-
+    // const targetScrollLock = refMain.current;
+    const handleClick = () =>
+    {
+        disableBodyScroll(refMain.current)
+        setIsShowMobMenu(true)
+    }
+    const closeMobMenu = () => {
+        setIsShowMobMenu(false)
+        enableBodyScroll(refMain.current);
+    }
     const handleKeyDown = e => {
         if (e.key === "Escape") closeMobMenu()
     }
