@@ -1,6 +1,6 @@
 import ContactsGroup from "./ContactsGroup"
 import ContactsGroupReverse from "./ContactsGroupReverse"
-import dataContacts from "../../public/data/contacts.json"
+import dataContacts from "../../../public/data/contacts.json"
 
 const ContactsList = () => {
      const {contactsTel, contactsMail, contactsSocial } = dataContacts;

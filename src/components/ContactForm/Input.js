@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types"
-import ErrorMessage from "../ErrorMessage";
+import ErrorMessage from "./ErrorMessage";
+import Label from "./Label";
 
 const Input = ({ label, name, register, required, pattern, placeholder, errors, checkSubmit }) => {
   const [validate, setValidate] = useState(true);
@@ -15,7 +16,7 @@ const Input = ({ label, name, register, required, pattern, placeholder, errors, 
   return (
     <>
       <div className="relative flex flex-col gap-[4px] w-full">
-        <label className="text-[12px] font-extralight leading-[24px] tracking-[2.4px]">{label}</label>
+        <Label label={label}/>
         <input className="backdrop-blur h-[24px] flex align-item-center text-[20px] leading-[24px] font-extralight 
                           bg-white/5 px-[8px] outline-none xl:h-[28px]
                         placeholder:text-[13px] placeholder:opacity-[0.2]

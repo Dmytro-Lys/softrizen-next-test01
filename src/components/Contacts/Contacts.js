@@ -1,6 +1,6 @@
 import Container from "../Container";
 import SectionTitle from "../SectionTitle";
-import ContactsList from "../ContactsList";
+import ContactsList from "../ContactsList/ContactsList";
 import ContactForm from "../ContactForm/ContactForm";
 import css from "./Contacts.module.css"
 

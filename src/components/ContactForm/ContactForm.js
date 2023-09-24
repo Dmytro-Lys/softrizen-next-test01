@@ -1,7 +1,8 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import Input from "./Input";
-import ErrorMessage from "../ErrorMessage";
+import Textarea from "./Textarea";
+import FormButton from "./FormButton";
 
 const ContactForm = () => {
     const { register, formState: { errors}, handleSubmit, reset } = useForm();
@@ -17,8 +18,7 @@ const ContactForm = () => {
             setIsChanged(!isChanged)
         }
     }
-    
-        
+
     return (
        
             <form className="w-full  flex flex-col gap-y-[25px] 
@@ -26,31 +26,22 @@ const ContactForm = () => {
                              xl:flex-col xl:gap-y-[40px] xl:max-w-[607px] " onSubmit={handleSubmit(onSubmit)}>
                 <div className="md:w-[221px] 
                             xl:w-full xl:flex xl:gap-[20px]">
-                           
-                <Input label="Full name" name="fullName" register={register}
-                    placeholder="Jhon Smith" pattern="^[a-zA-Zа-яіїєА-ЯІЇЄ]+(([' \-][a-zA-Zа-яіїєА-ЯІЇЄ ])?[a-zA-Zа-яіїєА-ЯІЇЄ]*)*$"
-                    errors={errors}
-                    checkSubmit={changeError}
-                    required />
-                   
-                <Input label="E-mail" name="mail" register={register}
-                    placeholder="johnsmith@email.com" pattern="[a-z0-9\._%+\-]+@[a-z0-9\.\-]+\.[a-z]{2,}$"
-                    errors={errors}
-                    checkSubmit={changeError}
-                    required />
-                    
+                    <Input label="Full name" name="fullName" register={register}
+                           placeholder="Jhon Smith"
+                           pattern="^[a-zA-Zа-яіїєА-ЯІЇЄ]+(([' \-][a-zA-Zа-яіїєА-ЯІЇЄ ])?[a-zA-Zа-яіїєА-ЯІЇЄ]*)*$"
+                           errors={errors}
+                           checkSubmit={changeError}
+                           required />
+                    <Input label="E-mail" name="mail" register={register}
+                           placeholder="johnsmith@email.com"
+                           pattern="[a-z0-9\._%+\-]+@[a-z0-9\.\-]+\.[a-z]{2,}$"
+                           errors={errors}
+                           checkSubmit={changeError}
+                           required />
                 </div>            
-                <div className="w-full flex flex-col xl:gap-[4px]">
-                    <label className="text-[12px] font-extralight leading-[24px] tracking-[2.4px]">Message</label>
-                    <textarea className="h-[193px] bg-white/5 resize-none outline-none px-[8px]
-                                        md:h-[221px] 
-                                        xl:h-[174px] "
-                                        {...register("Message")}
-                    ></textarea>
-              
-                <button className="block self-end w-[88px] text-[30px] uppercase font-medium mt-[16px]
-                                   transition-transform duration-300 ease-in-out hover:scale-[1.1]
-                                        xl:mt-[20px]" type="submit">send</button>
+                <div className="w-full flex flex-col gap-[16px] xl:gap-[24px]">
+                    <Textarea label="Message" register={register}/>
+                    <FormButton caption="send"/>
                 </div>          
             </form>
        

@@ -23,7 +23,7 @@ const App = ({ Component, pageProps }) => (
         />
         <meta
           property="og:image"
-          content="../../public/images/og_image.jpg"
+          content="../images/og_image.jpg"
         />
     </Head>
     <Component {...pageProps} />
